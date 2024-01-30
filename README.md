@@ -26,7 +26,50 @@ Fixed `quote.router.js` line 28: switch `app` to `router`. _This is the solution
 
 ### Bug 1
 
+`TypeError: Router.use() requires a middleware function but got a Object`
+
+Fixed `quote.router.js` line 27:  added module.exports = router;
 ...
+
+### Bug 2
+
+Preventing GET/ on localhost5007
+
+Fixed `client.js`line 7:  removed the `}` from after quotes
+
+### Bug 3
+
+`Pathed incorrectly`
+
+Fixed `server.js` line 17:  need `server/` before `public`
+
+### Bug 4
+
+Fixed `index.html` line 10, added `defer` between `script` and `source`
+
+### Bug 5
+`quote list` is listed as an object instead of an array
+
+Fixed `quote.router.js` line 5 - changed `{}` to `[]`
+
+
+### Bug 6
+
+Fixed `quote.router.js` line 8 - should just be a `/` instead of `/quotes`
+
+### Bug 7
+
+Fixed `quote.router` line 21 - `quotesList` should be `quoteList`
+
+### Bug 8
+
+Fixed `client.js` line 52 - `getQuote()` should be `getQuotes()`;
+
+### Bug 9
+
+Fixed `client.js` line 18 - changed `quotes` to `quotesFromServer`
+
+### Bug 10
 
 ## Extra Practice (Optional)
 
